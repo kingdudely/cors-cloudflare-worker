@@ -15,7 +15,7 @@ export default {
 		const urlParam = url.searchParams.get("url");
 
 		if (!urlParam) {
-			return new Response("Missing ?url=...", {
+			return new Response("Invalid ?url=...", {
 				status: 400
 			});
 		}
