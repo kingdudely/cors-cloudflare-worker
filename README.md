@@ -13,5 +13,5 @@
    ```javascript
    const workerUrl = "YOUR_WORKER_URL";
    const url = "YOUR_URL";
-   fetch(`${workerUrl}?url=${url}`, { ... });
+   fetch(`${workerUrl}?url=${encodeURIComponent(url)}`, { ... });
    ```
